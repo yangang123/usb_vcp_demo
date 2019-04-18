@@ -4,17 +4,36 @@
 # 二. cubemx生成usb虚拟串口的demo工程
 
 ## 2.1 步骤：
+
 cuebe生成串口后，heap要设置成0x600，否则在windows出现感叹号问题。
-图片请看: ./piture/1-9.png
-![avatar](../picture/1.png)
-![avatar](../picture/2.png)
-![avatar](../picture/3.png)
-![avatar](../picture/4.png)
-![avatar](../picture/5.png)
-![avatar](../picture/6.png)
-![avatar](../picture/7.png)
-![avatar](../picture/8.png)
-![avatar](../picture/9.png)
+
+1. 选择板子是stm32f4 discovery
+![图1](picture/1.png)
+
+2. 选择外部晶振
+  
+![图2](picture/2.png)
+
+3. 设置系统时钟是168MHz
+![图3](picture/3.png)
+
+4. 设置USB是device
+![图4](picture/4.png)
+
+5. 设置USB的从设备的类是vcp
+![图5](picture/5.png)
+
+6. 设置堆栈是0x600
+![图6](picture/6.png)
+
+7. 设置复位
+![图7](picture/7.png)
+
+8. 查看端口
+![图8](picture/8.png)
+
+9. 查看结果
+![图9](picture/9.png)
 
 ## 2.2 测试工作： 
 PC ： WIN10 
