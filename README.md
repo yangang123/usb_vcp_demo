@@ -4,36 +4,62 @@
 # 二. cubemx生成usb虚拟串口的demo工程
 
 ## 2.1 步骤：
+- 1. 选择板子是stm32f4 discovery
+- 2. 选择外部晶振
+- 3. 设置系统时钟是168MHz
+- 4. 设置USB是device
+- 5. 设置USB的从设备的类是vcp
+- 6. 设置堆栈是0x600[注意]
+- 7. 设置复位
+- 8. 查看端口
+- 9. 查看结果
+    
+<div align="center">
+<p>  1. 选择板子是stm32f4 discovery </p> 
+<img src="picture/1.png" height="720" width="1280" > 
+</div>
 
-cuebe生成串口后，heap要设置成0x600，否则在windows出现感叹号问题。
+<div align="center"> 
+<p>  2. 选择外部晶振 </p> 
+<img src="picture/2.png" height="720" width="1280" > 
+</div>
 
-1. 选择板子是stm32f4 discovery
-![图1](picture/1.png)
+<div align="center"> 
+<p>  3. 设置系统时钟是168MHz </p> 
+<img src="picture/3.png" height="720" width="1280"> 
 
-2. 选择外部晶振
-  
-![图2](picture/2.png)
+</div>
 
-3. 设置系统时钟是168MHz
-![图3](picture/3.png)
+<div align="center"> 
+<p>  4. 设置USB是device </p> 
+<img src="picture/4.png" height="720" width="1280"height="720" width="1280"> 
+</div>
 
-4. 设置USB是device
-![图4](picture/4.png)
+<div align="center"> 
+<p>  5. 设置USB的从设备的类是vcp </p> 
+<img src="picture/5.png" height="720" width="1280"> 
+</div>
 
-5. 设置USB的从设备的类是vcp
-![图5](picture/5.png)
+<div align="center"> 
+<p>  6. 设置堆栈是0x600 </p> 
+<img src="picture/6.png" height="720" width="1280"> 
+</div>
 
-6. 设置堆栈是0x600
-![图6](picture/6.png)
+<div align="center"> 
+<p>  7. 设置复位 </p> 
+<img src="picture/7.png" height="720" width="1280"> 
+</div>
 
-7. 设置复位
-![图7](picture/7.png)
+<div align="center"> 
+<p>  8. 查看端口 </p> 
+<img src="picture/8.png" height="720" width="1280"> 
+</div>
 
-8. 查看端口
-![图8](picture/8.png)
+<div align="center"> 
+<p>  9. 查看结果 </p> 
+<img src="picture/9.png" height="720" width="1280"> 
+</div>
 
-9. 查看结果
-![图9](picture/9.png)
 
 ## 2.2 测试工作： 
 PC ： WIN10 
