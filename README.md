@@ -1,63 +1,71 @@
 # 一. usb基础
-    stm32的usb也是最近公司都使用的的接口，usb全速可以达到12M/s, 作为虚拟串口接口，还是不错的。
+stm32的usb也是很多公司都在使用的接口，usb全速可以达到12M/s, 作为虚拟串口接口，还是不错的.usb整个协议还是很复杂的，整理了下我这几年对usb的使用，讲解下usb软件架构，和一些重要的知识点
 
 # 二. cubemx生成usb虚拟串口的demo工程
 
+[usb_vcp_demo仓库链接](https://github.com/yangang123/usb_vcp_demo)
+
+下载仓库: 
+```
+git clone https://github.com/yangang123/usb_vcp_demo.git
+```
+
 ## 2.1 步骤：
-- 1. 选择板子是stm32f4 discovery
-- 2. 选择外部晶振
-- 3. 设置系统时钟是168MHz
-- 4. 设置USB是device
-- 5. 设置USB的从设备的类是vcp
-- 6. 设置堆栈是0x600[注意]
-- 7. 设置复位
-- 8. 查看端口
-- 9. 查看结果
-    
+1. 选择板子是stm32f4 discovery
+2. 选择外部晶振
+3. 设置系统时钟是168MHz
+4. 设置USB是device
+5. 设置USB的从设备的类是vcp
+6. 设置堆栈是0x600[注意]
+7. 设置复位
+8. 查看端口
+9. 查看结果
+  
+
 <div align="center">
 <p>  1. 选择板子是stm32f4 discovery </p> 
-<img src="picture/1.png" height="720" width="1280" > 
+<img src="https://github.com/yangang123/usb_vcp_demo/raw/master/picture/1.png" height="720" width="1280" > 
 </div>
 
 <div align="center"> 
 <p>  2. 选择外部晶振 </p> 
-<img src="picture/2.png" height="720" width="1280" > 
+<img src="https://github.com/yangang123/usb_vcp_demo/raw/master/picture/2.png" height="720" width="1280" > 
 </div>
 
 <div align="center"> 
 <p>  3. 设置系统时钟是168MHz </p> 
-<img src="picture/3.png" height="720" width="1280"> 
+<img src="https://github.com/yangang123/usb_vcp_demo/raw/master/picture/3.png" height="720" width="1280"> 
 
 </div>
 
 <div align="center"> 
 <p>  4. 设置USB是device </p> 
-<img src="picture/4.png" height="720" width="1280"height="720" width="1280"> 
+<img src="https://github.com/yangang123/usb_vcp_demo/raw/master/picture/4.png" height="720" width="1280"height="720" width="1280"> 
 </div>
 
 <div align="center"> 
 <p>  5. 设置USB的从设备的类是vcp </p> 
-<img src="picture/5.png" height="720" width="1280"> 
+<img src="https://github.com/yangang123/usb_vcp_demo/raw/master/picture/5.png" height="720" width="1280"> 
 </div>
 
 <div align="center"> 
 <p>  6. 设置堆栈是0x600 </p> 
-<img src="picture/6.png" height="720" width="1280"> 
+<img src="https://github.com/yangang123/usb_vcp_demo/raw/master/picture/6.png" height="720" width="1280"> 
 </div>
 
 <div align="center"> 
 <p>  7. 设置复位 </p> 
-<img src="picture/7.png" height="720" width="1280"> 
+<img src="https://github.com/yangang123/usb_vcp_demo/raw/master/picture/7.png" height="720" width="1280"> 
 </div>
 
 <div align="center"> 
 <p>  8. 查看端口 </p> 
-<img src="picture/8.png" height="720" width="1280"> 
+<img src="https://github.com/yangang123/usb_vcp_demo/raw/master/picture/8.png" height="720" width="1280"> 
 </div>
 
 <div align="center"> 
 <p>  9. 查看结果 </p> 
-<img src="picture/9.png" height="720" width="1280"> 
+<img src="https://github.com/yangang123/usb_vcp_demo/raw/master/picture/9.png" height="720" width="1280"> 
 </div>
 
 
